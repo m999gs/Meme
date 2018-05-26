@@ -14,6 +14,11 @@
         android:title="@string/save_image"
         android:icon="@mipmap/baseline_save_white_18dp"
         app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/addImage"
+        android:title="@string/add_image"
+        android:icon="@mipmap/baseline_add_to_photos_white_18dp"
+        app:showAsAction="ifRoom"/>
     <item android:id="@+id/scaleType"
         android:title="@string/set_image_size">
         <menu>
@@ -27,8 +32,24 @@
                 android:title="@string/center" />
         </menu>
     </item>
-    <item android:id="@+id/addImage"
-        android:title="@string/add_image"
-        android:icon="@mipmap/baseline_add_to_photos_white_18dp"
-        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/textSize"
+        android:title="Text Size">
+        <menu>
+            <item android:id="@+id/extraSmall"
+                android:title="1"/>
+            <item android:id="@+id/small"
+                android:title="2"/>
+            <item android:id="@+id/Medium"
+                android:title="3"/>
+            <item android:id="@+id/large"
+                android:title="4"/>
+            <item android:id="@+id/extraLarge"
+                android:title="5"/>
+        </menu>
+
+
+
+
+    </item>
+
 </menu>

@@ -18,7 +18,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -37,6 +39,13 @@ public class MainActivity extends AppCompatActivity implements TopSectionFragmen
     private static Activity activity;
     private static BottomPictureFragment bottomPictureFragment;
 
+    public static int extraSmall= 18;
+    public static int small= 22;
+    public static int medium= 28;
+    public static int large= 32;
+    public static int extraLarge= 36;
+
+    //image scaling types
     private static ImageView.ScaleType centerCrop = ImageView.ScaleType.CENTER_CROP;
     private static ImageView.ScaleType center = ImageView.ScaleType.CENTER;
     private static ImageView.ScaleType centerInside = ImageView.ScaleType.CENTER_INSIDE;
@@ -88,14 +97,36 @@ public class MainActivity extends AppCompatActivity implements TopSectionFragmen
             case R.id.addImage:
                 addImageMethod();
                 return true;
+            case R.id.extraSmall:
+                ob.setTextSize(extraSmall);
+                return true;
+            case R.id.small:
+                ob.setTextSize(small);
+                return true;
+            case R.id.Medium:
+                ob.setTextSize(medium);
+                return true;
+            case R.id.large:
+                ob.setTextSize(large);
+                return true;
+            case R.id.extraLarge:
+                ob.setTextSize(extraLarge);
+                return true;
             case R.id.saveImage:
-                activity = bottomPictureFragment.getActivity();
-                takeAndSaveScreenShot(activity);
+                if (bottomPictureFragment==null){
+                    Toast.makeText(this,"Please add some text",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    activity = bottomPictureFragment.getActivity();
+                    takeAndSaveScreenShot(activity);
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
 
     public void addImageMethod() {
         Intent intent = new Intent();

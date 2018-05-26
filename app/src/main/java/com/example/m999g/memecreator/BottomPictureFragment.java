@@ -53,4 +53,8 @@ public class BottomPictureFragment extends Fragment{
     public void scaleTypeMethod(ImageView.ScaleType scaleType){
         imageView.setScaleType(scaleType);
     }
+    public void setTextSize(int x){
+        topText.setTextSize(x);
+        bottomText.setTextSize(x);
+    }
 }
