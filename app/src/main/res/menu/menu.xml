@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/memeColor"
+        android:title="@string/meme_color">
+        <menu>
+            <item android:id="@+id/White"
+                android:title="@string/white"/>
+            <item android:id="@+id/Black"
+                android:title="@string/black"/>
+        </menu>
+    </item>
+    <item android:id="@+id/saveImage"
+        android:title="@string/save_image"
+        android:icon="@mipmap/baseline_save_white_18dp"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/scaleType"
+        android:title="@string/set_image_size">
+        <menu>
+            <item android:id="@+id/fitCenter"
+                android:title="@string/fit_center"/>
+            <item android:id="@+id/centerInside"
+                android:title="@string/center_inside"/>
+            <item android:id="@+id/centerCrop"
+                android:title="@string/center_crop"/>
+            <item android:id="@+id/Center"
+                android:title="@string/center" />
+        </menu>
+    </item>
+    <item android:id="@+id/addImage"
+        android:title="@string/add_image"
+        android:icon="@mipmap/baseline_add_to_photos_white_18dp"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Meme Creator</string>
+    <string name="create_meme">Create MEME</string>
+    <string name="textview">TextView</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="black">BLACK</string>
+    <string name="white">WHITE</string>
+    <string name="meme_color">Meme Color</string>
+    <string name="fit_center">Fit Center</string>
+    <string name="center_crop">Center Crop</string>
+    <string name="center">Center</string>
+    <string name="center_inside">Center Inside</string>
+    <string name="add_image">Add Image</string>
+    <string name="set_image_size">Set Image Size</string>
+    <string name="save_image">Save Image</string>
+</resources>
