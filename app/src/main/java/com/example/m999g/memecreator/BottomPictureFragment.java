@@ -22,7 +22,6 @@ public class BottomPictureFragment extends Fragment{
     private static TextView topText;
     private  static TextView bottomText;
     private static ImageView imageView;
-    Uri imageuri;
 
     @Nullable
     @Override
